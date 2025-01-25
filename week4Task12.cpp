@@ -8,6 +8,22 @@ cin>>screen;
 cout<<"enter the total rows";
 cin>>totalrows;
 cout<<"enter the total columns";
-cin>>totalcoulmns
+cin>>totalcolumns;
+cout<<totalincome(screen, totalrows,totalcolumns);
     
+}
+float totalincome(string screeningtype,int row,int column){ 
+if (screeningtype=="premmium")
+{
+    return(row*column*12.00);
+
+}
+if (screeningtype=="normal")
+{
+    return(row*column*7.50);
+}
+
+
+
+
 }
